@@ -1,3 +1,6 @@
+//这一题和POJ2456基本上是一样的，我当时对二分法不太熟悉，也是看了一些别人的代码才做出来。这一篇就不用英文了。
+//This question is quite the same as POJ2456. Since I'm not quite familiar with binary search at the time when I tried out this question,
+//I was also only able to work it out with referencing to others' codes. For this question, I would like to use Chinese for explanation.
 #include<iostream>
 #include<queue>
 #include<stack>
