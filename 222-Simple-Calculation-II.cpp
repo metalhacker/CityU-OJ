@@ -66,3 +66,6 @@ int main()
 	}
 	return 0;
 }
+
+//Note that it seems that this problem cannot be solved with strtod or atof. But I have seen a solution with stod using string.
+//Probably there accuracy are different.
