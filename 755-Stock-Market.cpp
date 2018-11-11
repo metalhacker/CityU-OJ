@@ -18,16 +18,16 @@ int main()
 		{
 			cin >> stock[i];
 		}
-		stack<int>s;
+		stack<int>s;	//Use a stack to store the height of the bars
 		int i = 0;
 		while(i < n)
 		{
-			if (s.empty() || stock[s.top()] <= stock[i])
+			if (s.empty() || stock[s.top()] <= stock[i])	//If the stack is empty or the current bar is larger than top
 			{
-				s.push(i);
+				s.push(i);	//Push the index of current bar
 				i++;
 			}
-			else
+			else	//Since the current bar is lower than top, we can calculate the area with the height of top
 			{
 				tp = s.top();
 				s.pop();
@@ -35,7 +35,7 @@ int main()
 				max = max < temp ? temp : max;
 			}
 		}
-		while (!s.empty())
+		while (!s.empty())	//Still some bars remained in the stack, repeat previous method
 		{
 			tp = s.top();
 			s.pop();
