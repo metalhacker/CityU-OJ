@@ -20,7 +20,7 @@ void Init(int num)
 int Find(int target)
 {
 	if (target != Parent[target])
-		return Find(Parent[target]);
+		return Parent[target] = Find(Parent[target]);
 	else
 		return target;
 }
