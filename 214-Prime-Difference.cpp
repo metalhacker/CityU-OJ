@@ -5009,7 +5009,9 @@ int flag[1299710];
 
 int main()
 {
-	int num;
+	iso_base::sync_with_stdio(false);		//Note that this actually doesn't help
+	cin.tie(NULL);					//Should use scanf/printf
+	int num;					//I'm just tierd of changing it
 	for (int i = 0; i < 100000; i++)
 	{
 		flag[prime[i]] = 1;
